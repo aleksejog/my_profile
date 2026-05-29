@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой профессиональный профиль</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+
+        h1 {
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+
+        .title {
+            color: #764ba2;
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #eee;
+        }
+
+        .section {
+            margin: 25px 0;
+        }
+
+        .section h2 {
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 15px 0;
+        }
+
+        .skill-tag {
+            background: #667eea;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+        }
+
+        button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            font-size: 1em;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .social-login {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+
+        .social-login h3 {
+            margin-bottom: 15px;
+            color: #764ba2;
+        }
+
+        .social-buttons {
+            display: flex;
+            gap: 15px;
+        }
+
+        .social-btn {
+            background: #f0f0f0;
+            color: #333;
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s;
+        }
+
+        .social-btn:hover {
+            background: #667eea;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        footer {
+            margin-top: 30px;
+            text-align: center;
+            color: #999;
+</head>
+<body>
+    <div class="container">
+        <h1>Алексей Мудрый</h1>
+        <div class="title">Fullstack Developer | 5 лет опыта</div>
+
+
+        <div class="section">
+            <h2>📋 О себе</h2>
+            <p>Привет! Я профессиональный разработчик с опытом создания веб-приложений. Специализируюсь на React, Node.js и TypeScript. Люблю решать сложные задачи и делиться знаниями с коллегами.</p>
+        </div>
+
+
+        <div class="section">
+            <h2>💼 Навыки</h2>
+            <div class="skills">
+                <span class="skill-tag">JavaScript/TypeScript</span>
+                <span class="skill-tag">React</span>
+                <span class="skill-tag">Node.js</span>
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">Git</span>
+                <span class="skill-tag">Docker</span>
+                <span class="skill-tag">PostgreSQL</span>
+                <span class="skill-tag">MongoDB</span>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>🏆 Опыт работы</h2>
+            <p><strong>Senior Developer в IT-Компания</strong> (2022 — настоящее время)</p>
+            <p>Разработка высоконагруженных систем, наставничество джуниоров, код-ревью.</p>
+            <p><strong>Middle Developer в ВебСтудия</strong> (2019 — 2022)</p>
+            <p>Создание SPA на React, интеграция с REST API, оптимизация производительности.</p>
+        </div>
+
+        <div class="section">
+            <h2>📚 Образование</h2>
+            <p>МГТУ им. Баумана, факультет Информатики и систем управления (2015 — 2019)</p>
+        </div>
+
+        <!-- Кнопка подписки (будет добавлена в задаче 3) -->
+        <button id="subscribeBtn">📧 Подписаться на новости</button>
+
+        <!-- Форма входа через соцсети (будет добавлена в задаче 4Б) -->
+                <a href="#" class="social-btn">📘 ВКонтакте</a>
+        </div>
+        </footer>
+    </div>
+
+    <script>
+        // Простой скрипт для кнопки подписки
+        document.getElementById('subscribeBtn')?.addEventListener('click', function() {
+            alert('Спасибо за подписку! Будем присылать новости раз в неделю.');
+        });
+    </script>
+</body>
+</html>
+        <footer>
+            <p>© 2025 Алексей Мудрый | Контакты: ivan@example.com</p>
+                <a href="#" class="social-btn">📱 Telegram</a>
+                <a href="#" class="social-btn">🐙 GitHub</a>
+            </div>
+        <div class="social-login" id="socialLogin">
+            <h3>Войти через соцсети</h3>
+            <div class="social-buttons">
+
